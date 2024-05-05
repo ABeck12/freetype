@@ -53,7 +53,8 @@ project "freetype"
 		"src/truetype/truetype.c",
 		"src/type1/type1.c",
 		"src/type42/type42.c",
-		"src/winfonts/winfnt.c"
+		"src/winfonts/winfnt.c",
+		"src/svg/ftsvg.c"
 	}
 
 	includedirs
@@ -79,7 +80,7 @@ project "freetype"
 		runtime "Release"
 		optimize "on"
 
-	filter "configurations:Dist"
-		runtime "Release"
-		optimize "on"
-        symbols "off"
+	-- filter "configurations:Dist"
+	-- 	runtime "Release"
+	-- 	optimize "on"
+    --     symbols "off"
